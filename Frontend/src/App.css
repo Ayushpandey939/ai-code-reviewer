@@ -1,0 +1,136 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box
+}
+
+html,
+body,
+#root{
+  height: 100%;
+  width:100%;
+  background-color: rgb(30, 30, 30);
+  color-scheme: dark;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,main .right{
+  height: 100%;
+  flex-basis: 50%;
+  min-width: 0;
+  border-radius: 0.7rem;
+}
+
+main .left{
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.left .code{
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 4rem;
+}
+
+.left .code pre[class*="language-"],
+.left .code code[class*="language-"] {
+  background: transparent;
+  margin: 0;
+  border-radius: 0.7rem;
+  text-shadow: none;
+}
+
+.left .code textarea{
+  outline: none;
+  caret-color: white;
+}
+
+main .left .review{
+  position:absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  background-color: rgb(219,219,255);
+  color: black;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+}
+
+main .left .review:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+main .right{
+  background-color: rgb(40, 40, 40);
+  color: #e5e5e5;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  overflow: auto;
+}
+
+.right h2{
+  font-size: 1.6rem;
+  margin: 1.5rem 0 0.5rem;
+  color: #fff;
+}
+
+.right h3{
+  font-size: 1.2rem;
+  margin: 1.2rem 0 0.4rem;
+  color: #c4b5fd;
+}
+
+.right p,
+.right ul,
+.right ol{
+  margin-bottom: 0.8rem;
+}
+
+.right ul,
+.right ol{
+  padding-left: 1.5rem;
+}
+
+.right strong{
+  color: #fff;
+}
+
+.right hr{
+  border: none;
+  border-top: 1px solid #555;
+  margin: 1rem 0;
+}
+
+.right pre{
+  margin: 0.8rem 0;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.right pre code.hljs{
+  padding: 1rem;
+  background: #0d1117;
+}
+
+.right :not(pre) > code{
+  background: #333;
+  color: #f0abfc;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
