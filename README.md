@@ -4,7 +4,7 @@ An AI-powered code review application built using React, Node.js, Express, and t
 
 ## Preview
 
-![AI Code Reviewer Preview](screenshots/ai-code-reviewer.png)
+![AI Code Reviewer Preview](https://github.com/Ayushpandey939/ai-code-reviewer/blob/main/screenshot/image.png)
 
 *Preview of the AI Code Reviewer application.*
 
