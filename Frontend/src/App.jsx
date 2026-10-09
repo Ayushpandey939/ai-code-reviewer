@@ -11,7 +11,7 @@ import './App.css'
 const Editor = EditorModule.default ?? EditorModule
 
 function App() {
-  const [code, setCode] = useState('function sum() {\n  return 1 + 1\n}')
+  const [code, setCode] = useState('//Write your code here')
   const [review, setReview] = useState('')
   const [loading, setLoading] = useState(false)
 
